@@ -1,3 +1,4 @@
+vim.loader.enable()
 -- Lazy install an config
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 local need_bootstrap = not vim.loop.fs_stat(lazypath)
@@ -17,7 +18,7 @@ vim.opt.rtp:prepend(lazypath)
 require 'basic_settings'
 require 'load_plugins'
 
-if not need_bootstrat then
+if not need_bootstrap then
 	require 'load_configs'
 end
 
