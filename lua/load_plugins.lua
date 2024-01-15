@@ -44,6 +44,7 @@ local lazy_plugins = {
 		tag = '0.1.5',
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
+	{ 'preservim/tagbar' },
 
 	-- Motions
 	{ 'phaazon/hop.nvim' },
@@ -93,6 +94,7 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 vim.keymap.set('n', '<leader>t', "<cmd>TroubleToggle<CR>", {noremap = true})
+vim.keymap.set('n', '<leader>b', "<cmd>TagbarToggle<CR>", {noremap = true})
 
 vim.api.nvim_set_keymap('n', 'J', "<cmd>HopWord<CR>", { noremap = true })
 vim.api.nvim_set_keymap('n', 'H', "<cmd>HopWordCurrentLine<CR>", { noremap = true })
