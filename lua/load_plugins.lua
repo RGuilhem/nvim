@@ -45,6 +45,15 @@ local lazy_plugins = {
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
 	{ 'preservim/tagbar' },
+	{
+		"folke/todo-comments.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		opts = {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+		}
+	},
 
 	-- Motions
 	{ 'phaazon/hop.nvim' },
@@ -93,8 +102,8 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
-vim.keymap.set('n', '<leader>t', "<cmd>TroubleToggle<CR>", {noremap = true})
-vim.keymap.set('n', '<leader>b', "<cmd>TagbarToggle<CR>", {noremap = true})
+vim.keymap.set('n', '<leader>t', "<cmd>TroubleToggle<CR>", { noremap = true })
+vim.keymap.set('n', '<leader>b', "<cmd>TagbarToggle<CR>", { noremap = true })
 
 vim.api.nvim_set_keymap('n', 'J', "<cmd>HopWord<CR>", { noremap = true })
 vim.api.nvim_set_keymap('n', 'H', "<cmd>HopWordCurrentLine<CR>", { noremap = true })
