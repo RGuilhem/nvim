@@ -40,6 +40,9 @@ local lazy_plugins = {
 
 	-- Motions
 	{ 'phaazon/hop.nvim' },
+
+	-- terminal
+	{ 'voldikss/vim-floaterm' }
 }
 
 require("lazy").setup(lazy_plugins, {})
@@ -71,6 +74,10 @@ require('hop').setup {
 	keys = 'etovxqpdygfblzhckisuran',
 	quit_key = '<SPC>',
 }
+
+vim.keymap.set('n', "<leader>ft", ":FloatermNew --name=myfloat --height=0.8 --width=0.7 --autoclose=2 fish <CR> ")
+vim.keymap.set('n', "t", ":FloatermToggle myfloat<CR>")
+vim.keymap.set('t', "<Esc>", "<C-\\><C-n>:q<CR>")
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
