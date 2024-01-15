@@ -32,6 +32,11 @@ local lazy_plugins = {
 		dependencies = { 'nvim-tree/nvim-web-devicons' }
 	},
 	{ 'nvim-tree/nvim-tree.lua' },
+	{
+		'nvim-telescope/telescope.nvim',
+		tag = '0.1.5',
+		dependencies = { 'nvim-lua/plenary.nvim' }
+	},
 
 	-- Motions
 	{ 'phaazon/hop.nvim' },
@@ -66,6 +71,12 @@ require('hop').setup {
 	keys = 'etovxqpdygfblzhckisuran',
 	quit_key = '<SPC>',
 }
+
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 vim.api.nvim_set_keymap('n', 'J', "<cmd>HopWord<CR>", { noremap = true })
 vim.api.nvim_set_keymap('n', 'H', "<cmd>HopWordCurrentLine<CR>", { noremap = true })
