@@ -59,10 +59,22 @@ local lazy_plugins = {
 	{ 'phaazon/hop.nvim' },
 
 	-- terminal
-	{ 'voldikss/vim-floaterm' }
+	{ 'voldikss/vim-floaterm' },
+
+	-- better practices
+	{
+		"m4xshen/hardtime.nvim",
+		dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+		opts = {}
+	},
+
+	-- Git
+	{ 'lewis6991/gitsigns.nvim' },
+	{ 'rhysd/git-messenger.vim' },
 }
 
 require("lazy").setup(lazy_plugins, {})
+require('gitsigns').setup()
 
 require('nightfox').setup({
 	options = {
