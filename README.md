@@ -22,6 +22,7 @@
 | `Ctrl + f`        | Move one fullscreen backward                |
 | `Ctrl + d`        | Move ½ fullscreen forward                    |
 | `Ctrl + u`        | Move ½ fullscreen backward                   |
+</details>
 ## Insert mode:  inserting/appending text
 | Key Combination  | Action                                            |
 | ----------------- | ------------------------------------------------- |
@@ -39,4 +40,3 @@
 | `Ctrl + d`        | Move left with one line shift width                |
 | `Ctrl + ox`       | Quickly access normal mode for executing commands  |
 | `Esc`             | Exit insert mode                                   |
-</details>
