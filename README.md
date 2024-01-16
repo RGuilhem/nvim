@@ -25,7 +25,11 @@
 | `Ctrl + u`        | Move ½ fullscreen backward                   |
 
 </details>
+
 ## Insert mode:  inserting/appending text
+<details>
+  <summary>Cliquez pour afficher/masquer le tableau</summary>
+
 | Key Combination  | Action                                            |
 | ----------------- | ------------------------------------------------- |
 | `i`               | Insert before the cursor                           |
@@ -42,3 +46,5 @@
 | `Ctrl + d`        | Move left with one line shift width                |
 | `Ctrl + ox`       | Quickly access normal mode for executing commands  |
 | `Esc`             | Exit insert mode                                   |
+
+</details>
