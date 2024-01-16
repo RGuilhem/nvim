@@ -90,7 +90,14 @@ require('nightfox').setup({
 require("mason").setup()
 require("mason-lspconfig").setup()
 
-require('lualine').setup()
+local function window()
+  return vim.api.nvim_win_get_number(0)
+end
+require('lualine').setup {
+	inactive_sections = {
+		lualine_a = { window },
+	},
+}
 
 require("nvim-tree").setup({
 	filters = {
