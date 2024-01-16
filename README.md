@@ -5,6 +5,7 @@
 ## Cursor Movements
 <details>
   <summary>Cliquez pour afficher/masquer le texte</summary>
+
 | Key Combination  | Action                                      |
 | ----------------- | ------------------------------------------- |
 | `h`               | Move the cursor to the left                  |
@@ -22,6 +23,7 @@
 | `Ctrl + f`        | Move one fullscreen backward                |
 | `Ctrl + d`        | Move ½ fullscreen forward                    |
 | `Ctrl + u`        | Move ½ fullscreen backward                   |
+
 </details>
 ## Insert mode:  inserting/appending text
 | Key Combination  | Action                                            |
