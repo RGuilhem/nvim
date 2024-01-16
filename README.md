@@ -3,6 +3,8 @@
 # Shortcuts
 
 ## Cursor Movements
+<details>
+  <summary>Cliquez pour afficher/masquer le texte</summary>
 | Key Combination  | Action                                      |
 | ----------------- | ------------------------------------------- |
 | `h`               | Move the cursor to the left                  |
@@ -37,4 +39,4 @@
 | `Ctrl + d`        | Move left with one line shift width                |
 | `Ctrl + ox`       | Quickly access normal mode for executing commands  |
 | `Esc`             | Exit insert mode                                   |
-
+</details>
