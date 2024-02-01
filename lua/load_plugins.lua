@@ -55,9 +55,6 @@ local lazy_plugins = {
 		}
 	},
 
-	-- Motions
-	{ 'phaazon/hop.nvim' },
-
 	-- terminal
 	{ 'voldikss/vim-floaterm' },
 
@@ -99,11 +96,6 @@ require("nvim-tree").setup({
 })
 vim.api.nvim_set_keymap('n', '<C-f>', "<cmd>NvimTreeToggle<CR>", { noremap = true })
 
-require('hop').setup {
-	keys = 'etovxqpdygfblzhckisuran',
-	quit_key = '<SPC>',
-}
-
 vim.keymap.set('n', "<leader>ft", ":FloatermNew --name=myfloat --height=0.8 --width=0.7 --autoclose=2 fish <CR> ")
 vim.keymap.set('n', "t", ":FloatermToggle myfloat<CR>")
 vim.keymap.set('t', "<Esc>", "<C-\\><C-n>:q<CR>")
@@ -116,6 +108,3 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 vim.keymap.set('n', '<leader>t', "<cmd>TroubleToggle<CR>", { noremap = true })
 vim.keymap.set('n', '<leader>b', "<cmd>TagbarToggle<CR>", { noremap = true })
-
-vim.api.nvim_set_keymap('n', 'J', "<cmd>HopWord<CR>", { noremap = true })
-vim.api.nvim_set_keymap('n', 'H', "<cmd>HopWordCurrentLine<CR>", { noremap = true })
