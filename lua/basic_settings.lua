@@ -1,5 +1,6 @@
 vim.opt.number = true
 vim.opt.rnu = true
+vim.opt.scrolloff = 10
 
 vim.keymap.set({'n', 'x'}, 'gy', '"+y')
 vim.keymap.set({'n', 'x'}, 'gp', '"+p')

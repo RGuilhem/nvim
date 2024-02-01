@@ -23,5 +23,6 @@
   "tokyonight.nvim": { "branch": "main", "commit": "f247ee700b569ed43f39320413a13ba9b0aef0db" },
   "trouble.nvim": { "branch": "main", "commit": "f1168feada93c0154ede4d1fe9183bf69bac54ea" },
   "vim-floaterm": { "branch": "master", "commit": "3f01a623376957437f9376327637491b74719e38" },
+  "vim-rustfmt": { "branch": "master", "commit": "6bb517be12908926a4f5f516aa510c517c85260e" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }
