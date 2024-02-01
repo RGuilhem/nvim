@@ -84,8 +84,22 @@ local function window()
   return vim.api.nvim_win_get_number(0)
 end
 require('lualine').setup {
+	sections = {
+		lualine_c = {
+			{
+				'filename',
+				path = 1,
+			},
+		},
+	},
 	inactive_sections = {
 		lualine_a = { window },
+		lualine_c = {
+			{
+				'filename',
+				path = 1,
+			},
+		},
 	},
 }
 
